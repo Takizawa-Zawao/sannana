@@ -5,10 +5,29 @@
         <meta charset="UTF-8" />
     </head>
     <body>
-        <p>戻る</p>
-        <p>予約システムトップへ</p>
-        <h1>予約フォーム</h1>
+        <div class="panel">
+            <p>戻る</p>
+            <p>予約システムトップへ</p>
+        </div>
+        <h1 class="page_title">予約フォーム</h1>
         <h2>必要な情報を入力し、「送信」をクリックしてください。</h2>
-        <form action="" method="POST"></form>
+        <form action="" method="POST">
+            <p class="input_text">
+                姓（例：三七）
+                <input type="text" name="last_name" />
+            </p>
+            <p class="input_text">
+                名（例：太郎）
+                <input type="text" name="first_name" />
+            </p>
+            <p class="input_text">
+                フリガナ（例：サンナナタロウ）
+                <input type="text" name="phonetic">
+            </p>
+            <p class="input_text">
+                メールアドレス（例：sannana4@gmail.com）
+                <input type="text" name="phonetic">
+            </p>
+        </form>
     </body>
 </html>
