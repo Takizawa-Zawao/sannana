@@ -27,8 +27,6 @@ function addGuest(){
     new_guest_first_name.appendChild(new_guest_first_name_input);
     new_guest.appendChild(new_guest_first_name);
 
-    alert("ok_2");
-
     var new_guest_phonetic = document.createElement("li");
     new_guest_phonetic = "フリガナ（例：サンナナタロウ）";
     var new_guest_phonetic_input = document.createElement("input");
@@ -37,6 +35,7 @@ function addGuest(){
     new_guest_phonetic.appendChild(new_guest_phonetic_input);
     new_guest.appendChild(new_guest_phonetic);
 
+    alert("ok_3");
     alert(new_guest);
 
     var new_guest_area = document.getElementById("add_guest");
