@@ -1,6 +1,6 @@
 function addGuest(){
     alert("start");
-    
+
     //既存の「お連れ様」数を取得し、次のお連れ様のナンバリングを決定
     var guests = document.getElementsByClassName("guest");
     var next_guest_count = guests.length + 1;    
@@ -11,6 +11,7 @@ function addGuest(){
     var new_guest = document.createElement("ul");
     new_guest.className = "guest";
 
+    alert("ok_0");
     alert("ok_0");
 
     var new_guest_last_name = document.createElement("li");
