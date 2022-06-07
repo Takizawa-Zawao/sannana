@@ -1,5 +1,5 @@
 function addGuest(){
-    alert("start")
+    alert("start");
     //既存の「お連れ様」数を取得し、次のお連れ様のナンバリングを決定
     var guests = null;
     var next_guest_count = 0;
