@@ -16,6 +16,8 @@ function addGuest(){
     new_guest_first_name.appendChild(new_guest_last_name_input);
     new_guest.appendChild(new_guest_last_name);
 
+    alert("ok_1");
+
     var new_guest_first_name = document.createElement("li");
     new_guest_first_name.textContent = "名（例：太郎）";
     var new_guest_first_name_input = document.createElement("input");
