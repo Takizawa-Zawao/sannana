@@ -25,7 +25,7 @@ function addGuest(){
     new_guest_first_name.textContent = "名（例：太郎）";
     var new_guest_first_name_input = document.createElement("input");
     new_guest_first_name_input.type = "text";
-    new_guest_first_name_input.name = "first_name_" + next_guest_count;
+    new_guest_first_name_input.name = "first_name_" + parseInt(next_guest_count);
     new_guest_first_name.appendChild(new_guest_first_name_input);
     new_guest.appendChild(new_guest_first_name);
 
@@ -33,7 +33,7 @@ function addGuest(){
     new_guest_phonetic = "フリガナ（例：サンナナタロウ）";
     var new_guest_phonetic_input = document.createElement("input");
     new_guest_phonetic_input.type = "text";
-    new_guest_phonetic_input.name = "phonetic_" + next_guest_count;
+    new_guest_phonetic_input.name = "phonetic_" + parseInt(next_guest_count);
     new_guest_phonetic.appendChild(new_guest_phonetic_input);
     new_guest.appendChild(new_guest_phonetic);
 
