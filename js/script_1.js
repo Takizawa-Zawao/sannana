@@ -34,6 +34,9 @@ function addGuest(){
 
     var new_guest_area = document.getElementById("add_guest");
     var next_guest_area = new_guest_area.cloneNode();
+
+    var new_guest_header = document.createElement("p");
+    new_guest_header.textContent = "お連れ様" + parseInt(next_guest_count);
     new_guest_area.appendChild(new_guest);
 
     //idを削除
