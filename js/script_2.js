@@ -4,4 +4,5 @@ function initialize(){
     document.getElementById("remove_button").onclick = removeGuest();
 }
 
+alert("js is available.")
 initialize();
