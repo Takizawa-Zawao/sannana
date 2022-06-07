@@ -34,7 +34,7 @@ function addGuest(){
 
     var new_guest_area = document.getElementById("add_guest");
     var next_guest_area = new_guest_area.cloneNode();
-    new_guest_area.appendChild = new_guest;
+    new_guest_area.appendChild(new_guest);
 
     //idを削除
     new_guest_area.removeAttribute("id");
