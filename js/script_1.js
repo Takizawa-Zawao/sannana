@@ -10,7 +10,7 @@ function addGuest(){
     
     var next_guest_count = guests.length() + 1;
 
-    alert(next_guest_count);
+    alert(guests);
 
     //既存のdivを差し替える形で、「お連れ様」情報入力エリアを新規追加
     var new_guest = document.createElement("ul");
