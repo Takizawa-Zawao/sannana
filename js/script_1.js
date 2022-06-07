@@ -65,6 +65,6 @@ function removeGuest(){
         addButton.type = "button";
         addButton.value = "お連れ様を追加";
         addButton.onclick = "addGuest();"
-        document.getElementById("submit_button").before();    
+        document.getElementById("submit_button").before(addButton);    
     }
 }
