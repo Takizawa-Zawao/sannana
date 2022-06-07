@@ -32,6 +32,8 @@ function addGuest(){
     new_guest_phonetic.appendChild(new_guest_phonetic_input);
     new_guest.appendChild(new_guest_phonetic);
 
+    alert(new_guest);
+
     var new_guest_area = document.getElementById("add_guest");
     var next_guest_area = new_guest_area.cloneNode();
     new_guest_area.appendChild(new_guest);
