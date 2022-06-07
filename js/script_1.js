@@ -7,13 +7,13 @@ function addGuest(){
     //既存のdivを差し替える形で、「お連れ様」情報入力エリアを新規追加
     var new_guest_set = document.createElement("div");
     new_guest_set.id = "guest_" + parseInt(next_guest_count);
+    new_guest_set.className = "guest";
 
     var new_guest_header = document.createElement("p");
     new_guest_header.textContent = "お連れ様" + parseInt(next_guest_count);
     new_guest_set.appendChild(new_guest_header);
 
     var new_guest = document.createElement("ul");
-    new_guest.className = "guest";
     
     var new_guest_last_name = document.createElement("li");
     new_guest_last_name.textContent = "姓（例：三七）";
