@@ -41,13 +41,10 @@ function addGuest(){
     new_guest_area.appendChild(new_guest_header);
     new_guest_area.appendChild(new_guest);
 
-    //idを削除
-    //new_guest_area.removeAttribute("id");
-    
     //まだゲスト追加可能なら、ボタンを配置
-    /*if(next_guest_count < 8){
-        document.getElementById("add_button").before(next_guest_area);
-    }*/
+    if(next_guest_count >= 8){
+        document.getElementById("add_button").remove();
+    }
     
 
 }
