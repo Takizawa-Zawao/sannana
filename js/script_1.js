@@ -1,17 +1,9 @@
 function addGuest(){
     alert("start");
+    
     //既存の「お連れ様」数を取得し、次のお連れ様のナンバリングを決定
-    var guests = null;
-    var next_guest_count = 0;
-
-    alert(next_guest_count);
-
-    try{
-        guests = document.getElementsByClassName("guest");
-        next_guest_count = guests.length + 1;
-    }catch(err){
-        
-    }
+    var guests = document.getElementsByClassName("guest");
+    var next_guest_count = guests.length + 1;    
     
     alert(next_guest_count);
 
