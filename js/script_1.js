@@ -28,7 +28,7 @@ function addGuest(){
     new_guest.appendChild(new_guest_first_name);
 
     var new_guest_phonetic = document.createElement("li");
-    new_guest_phonetic = "フリガナ（例：サンナナタロウ）";
+    new_guest_phonetic.textContent = "フリガナ（例：サンナナタロウ）";
     var new_guest_phonetic_input = document.createElement("input");
     new_guest_phonetic_input.type = "text";
     new_guest_phonetic_input.name = "phonetic_" + parseInt(next_guest_count);
