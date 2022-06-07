@@ -5,6 +5,13 @@ function addGuest(){
     var next_guest_count = guests.length + 1;    
     
     //既存のdivを差し替える形で、「お連れ様」情報入力エリアを新規追加
+    var new_guest_set = document.createElement("div");
+    new_guest_set.id = "guest_" + parseInt(next_guest_count);
+
+    var new_guest_header = document.createElement("p");
+    new_guest_header.textContent = "お連れ様" + parseInt(next_guest_count);
+    new_guest_set.appendChild(new_guest_header);
+
     var new_guest = document.createElement("ul");
     new_guest.className = "guest";
     
@@ -35,11 +42,8 @@ function addGuest(){
     var new_guest_area = document.getElementById("add_guest");
     var next_guest_area = new_guest_area.cloneNode();
 
-    var new_guest_header = document.createElement("p");
-    new_guest_header.textContent = "お連れ様" + parseInt(next_guest_count);
-
-    new_guest_area.appendChild(new_guest_header);
-    new_guest_area.appendChild(new_guest);
+    new_guest_set.appendChild(new_guest);
+    new_guest_area.appendChild(new_guest_set);
 
     //まだゲスト追加可能なら、ボタンを配置
     if(next_guest_count >= 8){
@@ -47,4 +51,10 @@ function addGuest(){
     }
     
 
+}
+
+function removeGuest(){
+    var targetNum = document.getElementsByClassName("guest").length;
+    var targetElement = document.getElementById("guest_") + parseInt(targetNum);
+    targetElement.remove();
 }
