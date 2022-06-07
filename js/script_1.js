@@ -8,7 +8,7 @@ function addGuest(){
 
     try{
         guests = document.getElementsByClassName("guest");
-        next_guest_count = guests.length() + 1;
+        next_guest_count = guests.length + 1;
     }catch(err){
         
     }
