@@ -54,7 +54,17 @@ function addGuest(){
 }
 
 function removeGuest(){
+    //招待客を消去する
     var targetNum = document.getElementsByClassName("guest").length;
-    var targetElement = document.getElementById("guest_") + parseInt(targetNum);
+    var targetElement = document.getElementById("guest_" + parseInt(targetNum));
     targetElement.remove();
+
+    //addボタンが消えていれば復活させる
+    if(targetNum >= 8){
+        var addButton = document.createElement("input");
+        addButton.type = "button";
+        addButton.value = "お連れ様を追加";
+        addButton.onclick = "addGuest();"
+        document.getElementById("submit_button").before();    
+    }
 }
