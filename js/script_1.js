@@ -19,8 +19,6 @@ function addGuest(){
     new_guest_last_name.appendChild(new_guest_last_name_input);
     new_guest.appendChild(new_guest_last_name);
 
-    alert("ok_1");
-
     var new_guest_first_name = document.createElement("li");
     new_guest_first_name.textContent = "名（例：太郎）";
     var new_guest_first_name_input = document.createElement("input");
@@ -28,6 +26,8 @@ function addGuest(){
     new_guest_first_name_input.name = "first_name_" + parseInt(next_guest_count);
     new_guest_first_name.appendChild(new_guest_first_name_input);
     new_guest.appendChild(new_guest_first_name);
+
+    alert("ok_2");
 
     var new_guest_phonetic = document.createElement("li");
     new_guest_phonetic = "フリガナ（例：サンナナタロウ）";
