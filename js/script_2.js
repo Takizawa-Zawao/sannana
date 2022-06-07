@@ -1,5 +1,4 @@
-function initilize(){
-    alert("initialize.");
+function initialize(){
     document.getElementById("add_button").onclick = addGuest();
     document.getElementById("remove_button").onclick = removeGuest();
 }
