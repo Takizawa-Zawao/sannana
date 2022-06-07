@@ -11,14 +11,11 @@ function addGuest(){
     var new_guest = document.createElement("ul");
     new_guest.className = "guest";
 
-    alert("ok_0");
-    alert("ok_0");
-
     var new_guest_last_name = document.createElement("li");
     new_guest_last_name.textContent = "姓（例：三七）";
     var new_guest_last_name_input = document.createElement("input");
     new_guest_last_name_input.type = "text";
-    new_guest_last_name_input.name = "last_name_" + next_guest_count;
+    new_guest_last_name_input.name = "last_name_" + parseInt(next_guest_count);
     new_guest_first_name.appendChild(new_guest_last_name_input);
     new_guest.appendChild(new_guest_last_name);
 
