@@ -11,6 +11,8 @@ function addGuest(){
     var new_guest = document.createElement("ul");
     new_guest.className = "guest";
 
+    alert(new_guest);
+
     var new_guest_last_name = document.createElement("li");
     new_guest_last_name.textContent = "姓（例：三七）";
     var new_guest_last_name_input = document.createElement("input");
