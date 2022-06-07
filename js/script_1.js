@@ -4,6 +4,8 @@ function addGuest(){
     var guests = null;
     var next_guest_count = 0;
 
+    alert(next_guest_count);
+
     try{
         guests = document.getElementsByClassName("guest");
         next_guest_count = guests.length() + 1;
