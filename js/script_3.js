@@ -1,21 +1,18 @@
 function createInputBox(place, message){
-    var created_forms = document.getElementsByClassName("created_form");
-    for(var created_form of created_forms){
-        created_form.remove();
-    }
+    document.getElementById("created_content").remove();
+
     var paragraph = document.createElement("p");
     paragraph.textContent = message;
+    paragraph.id = "created_content";
 
     var inputBox = document.createElement("input");
     inputBox.type = "text";
     inputBox.name = "place";
-    inputBox.className = "created_form";
     paragraph.appendChild(inputBox);
 
     var inputButton = document.createElement("input");
     inputButton.type = "submit";
     inputButton.value = "予約確認";
-    inputButton.className = "created_form";
     paragraph.appendChild(inputButton);
 
     document.getElementById(place).after(paragraph);
