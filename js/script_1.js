@@ -45,7 +45,7 @@ function addGuest(){
     new_guest_set.appendChild(new_guest);
     new_guest_area.appendChild(new_guest_set);
 
-    //まだゲスト追加可能なら、ボタンを配置
+    //もうゲスト追加不可能なら、ボタンを削除
     if(next_guest_count >= 8){
         document.getElementById("add_button").remove();
     }
@@ -65,6 +65,7 @@ function removeGuest(){
         addButton.type = "button";
         addButton.value = "お連れ様を追加";
         addButton.id = "add_button";
+        //addButton.addEventListener("click", addGuest, false);
         document.getElementById("remove_button").before(addButton);    
     }
 }
