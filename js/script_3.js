@@ -1,5 +1,9 @@
 function createInputBox(place, message){
-    document.getElementById("created_content").remove();
+    try{
+        var created_content = document.getElementById("created_content");
+    }catch(err){
+
+    }
 
     var paragraph = document.createElement("p");
     paragraph.textContent = message;
