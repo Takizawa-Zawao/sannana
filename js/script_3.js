@@ -7,10 +7,11 @@ function createInputBox(place, message){
     }
 
     var paragraph = document.createElement("p");
-    paragraph.textContent = message;
-    paragraph.appendChild("br");
     paragraph.id = "created_content";
 
+    var child_paragraph = document.createElement("p");
+    child_paragraph.textContent = message;
+    
     var inputBox = document.createElement("input");
     inputBox.type = "text";
     inputBox.name = "place";
