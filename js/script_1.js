@@ -16,7 +16,9 @@ function addGuest(){
     var new_guest = document.createElement("ul");
     
     var new_guest_last_name = document.createElement("li");
-    new_guest_last_name.textContent = "姓（例：三七）";
+    var new_guest_last_name_text = document.createElement("p");
+    new_guest_last_name_text.textContent = "姓（例：三七）";
+    new_guest_last_name.appendChild(new_guest_last_name_text);
     var new_guest_last_name_input = document.createElement("input");
     new_guest_last_name_input.type = "text";
     new_guest_last_name_input.name = "last_name_" + parseInt(next_guest_count);
@@ -24,7 +26,9 @@ function addGuest(){
     new_guest.appendChild(new_guest_last_name);
 
     var new_guest_first_name = document.createElement("li");
-    new_guest_first_name.textContent = "名（例：太郎）";
+    var new_guest_first_name_text = document.createElement("p");
+    new_guest_first_name_text.textContent = "名（例：太郎）";
+    new_guest_first_name.appendChild(new_guest_first_name_text);
     var new_guest_first_name_input = document.createElement("input");
     new_guest_first_name_input.type = "text";
     new_guest_first_name_input.name = "first_name_" + parseInt(next_guest_count);
@@ -32,7 +36,9 @@ function addGuest(){
     new_guest.appendChild(new_guest_first_name);
 
     var new_guest_phonetic = document.createElement("li");
-    new_guest_phonetic.textContent = "フリガナ（例：サンナナタロウ）";
+    var new_guest_phonetic_text = document.createElement("p");
+    new_guest_phonetic_text.textContent = "フリガナ（例：サンナナタロウ）";
+    new_guest_phonetic.appendChild(new_guest_phonetic_text);
     var new_guest_phonetic_input = document.createElement("input");
     new_guest_phonetic_input.type = "text";
     new_guest_phonetic_input.name = "phonetic_" + parseInt(next_guest_count);
