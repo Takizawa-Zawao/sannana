@@ -11,6 +11,7 @@ function createInputBox(place, message){
 
     var child_paragraph = document.createElement("p");
     child_paragraph.textContent = message;
+    paragraph.appendChild(child_paragraph);
     
     var inputBox = document.createElement("input");
     inputBox.type = "text";
