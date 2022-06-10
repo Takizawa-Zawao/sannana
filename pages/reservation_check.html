@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>予約確認</title>
-    </head>
-    <body>
-        <p><a href="Index.html">予約システムトップ</a></p>
-        <h1>予約確認</h1>
-        <p>確認方法を選んでください。</p>
-        <form action="" method="post">
-            <ul>
-                <li>
-                    <input class="buttons" id="mail_form" type="button" onclick="button_click_1()" value="メールアドレスで確認" />
-                </li>
-                <li>
-                    <input class="buttons" id="id_form" type="button" onclick="button_click_2()" value="予約番号で確認" />
-                </li>
-            </ul>
-        </form>
-        <script type="text/javascript" src="../js/script_3.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>予約確認</title>
+</head>
+
+<body>
+    <p><a href="Index.html">予約システムトップ</a></p>
+    <h1>予約確認</h1>
+    <p>確認方法を選んでください。</p>
+    <form action="https://cjz67ytgti.execute-api.ap-northeast-1.amazonaws.com/sannana_api_stage/reservation_check"
+        method="post">
+        <ul>
+            <li>
+                <input class="buttons" id="mail_form" type="button" onclick="button_click_1()" value="メールアドレスで確認" />
+            </li>
+            <li>
+                <input class="buttons" id="id_form" type="button" onclick="button_click_2()" value="予約番号で確認" />
+            </li>
+        </ul>
+    </form>
+    <script type="text/javascript" src="../js/script_3.js"></script>
+</body>
+
 </html>
