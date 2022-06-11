@@ -16,6 +16,7 @@ function createInputBox(place, message){
     var inputBox = document.createElement("input");
     inputBox.type = "text";
     inputBox.name = place;
+    inputBox.required = true;
     paragraph.appendChild(inputBox);
 
     var inputButton = document.createElement("input");
