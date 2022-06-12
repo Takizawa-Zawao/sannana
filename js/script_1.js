@@ -21,7 +21,7 @@ function addGuest(){
     new_guest_last_name.appendChild(new_guest_last_name_text);
     var new_guest_last_name_input = document.createElement("input");
     new_guest_last_name_input.type = "text";
-    new_guest_last_name_input.name = "last_name_" + parseInt(next_guest_count);
+    new_guest_last_name_input.name = "lastName_" + parseInt(next_guest_count);
     new_guest_last_name.appendChild(new_guest_last_name_input);
     new_guest.appendChild(new_guest_last_name);
 
@@ -31,7 +31,7 @@ function addGuest(){
     new_guest_first_name.appendChild(new_guest_first_name_text);
     var new_guest_first_name_input = document.createElement("input");
     new_guest_first_name_input.type = "text";
-    new_guest_first_name_input.name = "first_name_" + parseInt(next_guest_count);
+    new_guest_first_name_input.name = "firstName_" + parseInt(next_guest_count);
     new_guest_first_name.appendChild(new_guest_first_name_input);
     new_guest.appendChild(new_guest_first_name);
 
