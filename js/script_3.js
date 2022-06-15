@@ -22,6 +22,7 @@ function createInputBox(place, message){
     var inputBox = document.createElement("input");
     inputBox.type = input_type.get(place);
     inputBox.name = place;
+    inputBox.placeholder = "0000000";
     inputBox.required = true;
     paragraph.appendChild(inputBox);
 
