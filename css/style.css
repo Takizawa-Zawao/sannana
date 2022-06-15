@@ -5,18 +5,27 @@ a.btn,
 button.btn {
     outline: none;
     border: none;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
 .button_link,
 a.button_link {
-  color: black;
-  background-color: skyblue;
+    color: black;
+    background-color: skyblue;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 .button_link:hover,
 a.button_link:hover {
-  color: #fff;
-  background: #f56500;
+    color: #fff;
+    background: #f56500;
+  
 }
 
 ul.pointless {
