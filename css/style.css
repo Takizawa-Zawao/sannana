@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+    font-family: Meiryo UI;
+}
 
 .btn,
 a.btn,
