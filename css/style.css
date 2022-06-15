@@ -2,6 +2,7 @@
 html,
 p,
 h1 {
+    -webkit-appearance: none;
     font-family: 'Yu Gothic', 'YuGothic';
 }
 
