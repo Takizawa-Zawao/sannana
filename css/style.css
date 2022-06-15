@@ -22,6 +22,21 @@ button.btn {
     font-size: 15px;
 }
 
+.half_btn {
+    outline: none;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+    -webkit-appearance: none;
+    font-size: 15px;
+}
+
 .created_content {
     outline: none;
     border: none;
