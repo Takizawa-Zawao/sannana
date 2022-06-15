@@ -6,6 +6,11 @@ function createInputBox(place, message){
 
     }
 
+    var input_type = new Map();
+    input_type.set("mail=form", "email");
+    input_type.set("id_form", "text");
+    
+
     var paragraph = document.createElement("p");
     paragraph.id = "created_content";
 
@@ -14,7 +19,7 @@ function createInputBox(place, message){
     paragraph.appendChild(child_paragraph);
     
     var inputBox = document.createElement("input");
-    inputBox.type = "text";
+    inputBox.type = input_type.get(place);
     inputBox.name = place;
     inputBox.required = true;
     paragraph.appendChild(inputBox);
