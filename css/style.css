@@ -19,3 +19,7 @@ a.button_link:hover {
   color: #fff;
   background: #f56500;
 }
+
+ul.pointless {
+    list-style: none;
+}
