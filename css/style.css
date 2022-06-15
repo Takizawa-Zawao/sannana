@@ -28,11 +28,11 @@ button.btn {
     border: none;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 150px;
+    width: 170px;
     text-align: center;
     -webkit-appearance: none;
     font-size: 15px;
