@@ -5,6 +5,7 @@ a.btn,
 button.btn {
     outline: none;
     border: none;
+    border-radius:30px;
 }
 
 
