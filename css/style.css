@@ -11,7 +11,7 @@ button.btn {
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 70px;
+    width: 200px;
 }
 
 
@@ -19,13 +19,6 @@ button.btn {
 a.button_link {
     color: black;
     background-color: skyblue;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 70px;
 }
 .button_link:hover,
 a.button_link:hover {
