@@ -13,21 +13,27 @@ function createInputBox(place, message){
 
     var paragraph = document.createElement("p");
     paragraph.id = "created_content";
+    paragraph.className = "created=content";
 
     var child_paragraph = document.createElement("p");
     child_paragraph.textContent = message;
     paragraph.appendChild(child_paragraph);
     
+    var input_paragraph_01 = document.createElement("p");
     var inputBox = document.createElement("input");
     inputBox.type = input_type.get(place);
     inputBox.name = place;
     inputBox.required = true;
-    paragraph.appendChild(inputBox);
+    input_paragraph_01.appendChild(inputBox);
+    paragraph.appendChild(input_paragraph_01);
 
+    var input_paragraph_02 = document.createElement("p");
     var inputButton = document.createElement("input");
     inputButton.type = "submit";
+    inputButton.className = "submit_button";
     inputButton.value = "予約確認";
-    paragraph.appendChild(inputButton);
+    input_paragraph_02.appendChild(inputButton);
+    paragraph.appendChild(input_paragraph_02);
 
     document.getElementById(place).after(paragraph);
 }
