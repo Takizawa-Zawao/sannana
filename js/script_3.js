@@ -24,6 +24,9 @@ function createInputBox(place, message){
     inputBox.required = true;
     paragraph.appendChild(inputBox);
 
+    var emptyPragraph = document.createElement("p"); 
+    paragraph.appendChild(emptyPragraph);
+
     var inputButton = document.createElement("input");
     inputButton.type = "submit";
     inputButton.className = "submit_button";
