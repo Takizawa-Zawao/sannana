@@ -8,7 +8,7 @@ function createInputBox(place, message){
 
     var input_type = new Map();
     input_type.set("mail_form", "email");
-    input_type.set("id_form", "text");
+    input_type.set("id_form", "number");
     
 
     var paragraph = document.createElement("p");
