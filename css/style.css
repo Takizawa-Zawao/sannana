@@ -45,3 +45,19 @@ a.button_link:hover {
 ul.pointless {
     list-style: none;
 }
+
+.submit_button {
+    outline: none;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    text-align: center;
+    -webkit-appearance: none;
+}
