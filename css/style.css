@@ -14,8 +14,6 @@ button.btn {
     padding-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     width: 300px;
     text-align: center;
     -webkit-appearance: none;
@@ -26,7 +24,7 @@ button.btn {
     border: none;
     width: 300px;
     color: black;
-    background-color: skyblue;
+    background-color: lightgray;
 }
 
 
@@ -55,9 +53,25 @@ ul.pointless {
     padding-left: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     width: 300px;
     text-align: center;
     -webkit-appearance: none;
+    color: black;
+    background-color: lightseagreen;
+}
+
+.submit_button:hover {
+    outline: none;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
+    -webkit-appearance: none;
+    color: white;
+    background-color: lightgreen;
 }
