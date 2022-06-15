@@ -19,6 +19,7 @@ button.btn {
     width: 300px;
     text-align: center;
     -webkit-appearance: none;
+    font-size: 5px;
 }
 
 .created_content {
@@ -59,6 +60,7 @@ ul.pointless {
     -webkit-appearance: none;
     color: black;
     background-color: rgb(112, 183, 112);
+    font-size: 5px;
 }
 
 .submit_button:hover {
