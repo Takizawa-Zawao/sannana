@@ -30,12 +30,12 @@ button.btn {
 .button_link,
 a.button_link {
     color: black;
-    background-color: skyblue;
+    background-color: rgb(121, 182, 206);
 }
 .button_link:hover,
 a.button_link:hover {
     color: black;
-    background: lightblue;
+    background: rgb(146, 222, 252);
   
 }
 
