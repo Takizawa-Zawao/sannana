@@ -38,7 +38,7 @@ function createInputBox(place, message){
 }
 
 function button_click_1(){
-    createInputBox("mail_form", "予約時に登録したメールアドレスを<br>入力してください。");
+    createInputBox("mail_form", "予約時に登録したメールアドレスを入力してください。");
 }
 
 function button_click_2(){

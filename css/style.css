@@ -24,7 +24,6 @@ button.btn {
     border: none;
     width: 300px;
     color: black;
-    background-color: lightgray;
 }
 
 
@@ -47,8 +46,8 @@ ul.pointless {
 .submit_button {
     outline: none;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 50px;
     padding-left: 50px;
     margin-top: 10px;
