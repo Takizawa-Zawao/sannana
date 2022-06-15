@@ -34,8 +34,8 @@ a.button_link {
 }
 .button_link:hover,
 a.button_link:hover {
-    color: #fff;
-    background: #f56500;
+    color: black;
+    background: lightblue;
   
 }
 
@@ -71,6 +71,6 @@ ul.pointless {
     width: 300px;
     text-align: center;
     -webkit-appearance: none;
-    color: white;
+    color: black;
     background-color: lightgreen;
 }
