@@ -5,10 +5,10 @@ a.btn,
 button.btn {
     outline: none;
     border: none;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-top: 20em;
+    padding-bottom: 20em;
+    padding-right: 10em;
+    padding-left: 10em;
 }
 
 
@@ -16,10 +16,10 @@ button.btn {
 a.button_link {
     color: black;
     background-color: skyblue;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-top: 20em;
+    padding-bottom: 20em;
+    padding-right: 10em;
+    padding-left: 10em;
 }
 .button_link:hover,
 a.button_link:hover {
