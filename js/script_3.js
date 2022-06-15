@@ -11,7 +11,7 @@ function createInputBox(place, message){
     input_type.set("id_form", "number");
     
 
-    var paragraph = document.createElement("p");
+    var paragraph = document.createElement("div");
     paragraph.id = "created_content";
     paragraph.className = "created=content";
 
