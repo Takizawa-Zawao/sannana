@@ -11,6 +11,7 @@ button.btn {
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 70px;
 }
 
 
@@ -24,6 +25,7 @@ a.button_link {
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 70px;
 }
 .button_link:hover,
 a.button_link:hover {
