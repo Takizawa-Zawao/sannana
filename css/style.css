@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.button_link,
+a.button_link {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
