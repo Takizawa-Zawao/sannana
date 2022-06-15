@@ -10,7 +10,7 @@ button.btn {
 
 .button_link,
 a.button_link {
-  color: #fff;
+  color: black;
   background-color: skyblue;
 }
 .button_link:hover,
