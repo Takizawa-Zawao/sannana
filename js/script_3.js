@@ -9,6 +9,10 @@ function createInputBox(place, message){
     var input_type = new Map();
     input_type.set("mail_form", "email");
     input_type.set("id_form", "number");
+
+    var placeholder_map = new Map();
+    placeholder_map.set("mail_form", "sannana4@gmail.com");
+    placeholder_map.set("id_form", "0000000");
     
 
     var paragraph = document.createElement("p");
@@ -22,7 +26,7 @@ function createInputBox(place, message){
     var inputBox = document.createElement("input");
     inputBox.type = input_type.get(place);
     inputBox.name = place;
-    inputBox.placeholder = "0000000";
+    inputBox.placeholder = placeholder_map.get(place);
     inputBox.required = true;
     paragraph.appendChild(inputBox);
 
