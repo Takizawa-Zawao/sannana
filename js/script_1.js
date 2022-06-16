@@ -124,7 +124,7 @@ function removeGuest(){
         addButton.type = "button";
         addButton.value = "お連れ様を追加";
         addButton.id = "add_button";
-        addButton.className = "button_link";
+        addButton.className = "half_btn button_link";
         addButton.onclick = addGuest;
         document.getElementById("remove_button").before(addButton);    
     }
