@@ -76,7 +76,7 @@ function addGuest(){
     new_guest_phonetic.appendChild(new_guest_phonetic_text);
     var new_guest_phonetic_input = document.createElement("input");
     new_guest_phonetic_input.type = "text";
-    new_guest_phonetic_input.pattern = "[\\u30A1-\\U30F6]*";
+    new_guest_phonetic_input.pattern = "[\\u30A1-\\u30F6]*";
     new_guest_phonetic_input.required = true;
     new_guest_phonetic_input.name = "phonetic_" + parseInt(next_guest_count);
     new_guest_phonetic_input.placeholder = "サンナナタロウ";
