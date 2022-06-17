@@ -39,7 +39,7 @@ function createInputBox(place, message){
     inputButton.value = "予約確認";
     paragraph.appendChild(inputButton);
 
-    document.getElementById(insert_area).appendChild(paragraph);
+    document.getElementById("insert_area").appendChild(paragraph);
 }
 
 function button_click_1(){
