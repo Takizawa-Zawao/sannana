@@ -89,7 +89,7 @@ function addGuest(){
     new_guest_isMagician_radio_1.name = "isMagician_" + parseInt(next_guest_count);
     new_guest_isMagician_radio_1.value = 1;
     var new_guest_isMagician_text_1 = document.createElement("div");
-    new_guest_isMagician_text_1.innerHTML = "ステージマジックをやったことがある";
+    new_guest_isMagician_text_1.textContent = "ステージマジックをやったことがある";
     new_guest_isMagician.appendChild(new_guest_isMagician_radio_1);
     new_guest_isMagician.appendChild(new_guest_first_name_text);
     var new_guest_isMagician_radio_2 = document.createElement("input");
@@ -97,7 +97,7 @@ function addGuest(){
     new_guest_isMagician_radio_2.name = "isMagician_" + parseInt(next_guest_count);
     new_guest_isMagician_radio_2.value = 0;
     var new_guest_isMagician_text_2 = document.createElement("div");
-    new_guest_isMagician_text_2.innerHTML = "ステージマジックをやったことがない";
+    new_guest_isMagician_text_2.textContent = "ステージマジックをやったことがない";
     new_guest_isMagician.appendChild(new_guest_isMagician_radio_2);
     new_guest_isMagician.appendChild(new_guest_first_name_text_2);
     new_guest.appendChild(new_guest_isMagician);
