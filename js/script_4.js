@@ -30,7 +30,7 @@ function touchFunction() {
 };
 
 function startFunction(){
-    touchedElement = even.target.id;
+    touchedElement = event.target.id;
     alert("start: " + event.target.id);
 };
 
