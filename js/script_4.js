@@ -18,26 +18,27 @@ function mouseFuction() {
 
         }
     );
-}
+};
 function touchFunction() {
     document.querySelectorAll("div.draggable_element").forEach(
         element => {
+            alert(element.textContent);
             element.addEventListener("touchstart", startFunction); 
             element.addEventListener("touchmove", mediumFunction);
             element.addEventListener("touchend", endFunction);
         }
     );
-}
+};
 
 function startFunction(){
     event.dataTransfer.setData("text/plain", event.target.id);
     alert("start: " + event.target.id);
-}
+};
 
 function mediumFunction(){
     event.preventDefault();
     this.style.borderTop = "3px solid";
-}
+};
 
 function endFunction(){
     event.preventDefault();
@@ -46,7 +47,7 @@ function endFunction(){
     this.parentNode.insertBefore(element_dropped, this);
     this.style.borderTop = "";
     alert("end: " + id);
-}
+};
 
 if("ontouchend" in document){
     alert("touch mode");
@@ -54,4 +55,4 @@ if("ontouchend" in document){
 }else{
     alert("mouse mode");
     mouseFuction();
-}
+};
