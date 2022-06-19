@@ -22,24 +22,24 @@ function mouseFuction() {
 function touchFunction() {
     document.querySelectorAll("draggable_element").forEach(
         element => {
-            element.addEventListener("touchstart", startFunction()); 
-            element.addEventListener("touchmove", mediumFunction());
-            element.addEventListener("touchend", endFunction());
+            element.addEventListener("touchstart", startFunction); 
+            element.addEventListener("touchmove", mediumFunction);
+            element.addEventListener("touchend", endFunction);
         }
     );
 };
 
-function startFunction(){
+function startFunction(event){
     touchedElement = event.target.id;
     alert("start: " + event.target.id);
 };
 
-function mediumFunction(){
+function mediumFunction(event){
     event.preventDefault();
     this.style.borderTop = "3px solid";
 };
 
-function endFunction(){
+function endFunction(event){
     event.preventDefault();
     var id = touchedElement;
     var element_dropped = document.getElementById(id);
