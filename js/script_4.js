@@ -49,7 +49,7 @@ function endFunction(){
 
 if("ontouchend" in document){
     alert("touch mode");
-    touchFunction;
+    touchFunction();
 }else{
     alert("mouse mode");
     mouseFuction;
