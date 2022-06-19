@@ -22,32 +22,33 @@ function mouseFuction() {
 function touchFunction() {
     document.querySelectorAll("draggable_element").forEach(
         element => {
-            element.addEventListener("touchstart", startFunction(event)); 
-            element.addEventListener("touchmove", mediumFunction(event));
-            element.addEventListener("touchend", endFunction(event));
+            element.addEventListener("touchstart", startFunction()); 
+            element.addEventListener("touchmove", mediumFunction());
+            element.addEventListener("touchend", endFunction());
         }
     );
 };
 
-function startFunction(event){
-    event.dataTransfer.setData("text/plain", event.target.id);
+function startFunction(){
+    touchedElement = even.target.id;
     alert("start: " + event.target.id);
 };
 
-function mediumFunction(event){
+function mediumFunction(){
     event.preventDefault();
     this.style.borderTop = "3px solid";
 };
 
-function endFunction(event){
+function endFunction(){
     event.preventDefault();
-    var id = event.sataTransfer.getData("text");
+    var id = touchedElement;
     var element_dropped = document.getElementById(id);
     this.parentNode.insertBefore(element_dropped, this);
     this.style.borderTop = "";
     alert("end: " + id);
 };
 
+let touchedElement = null;
 if("ontouchend" in document){
     alert("touch mode");
     touchFunction();
