@@ -22,10 +22,9 @@ function mouseFuction() {
 function touchFunction() {
     document.querySelectorAll("draggable_element").forEach(
         element => {
-            alert(element.textContent);
-            element.addEventListener("touchstart", startFunction); 
-            element.addEventListener("touchmove", mediumFunction);
-            element.addEventListener("touchend", endFunction);
+            element.addEventListener("touchstart", startFunction()); 
+            element.addEventListener("touchmove", mediumFunction());
+            element.addEventListener("touchend", endFunction());
         }
     );
 };
