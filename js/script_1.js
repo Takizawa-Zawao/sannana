@@ -82,7 +82,7 @@ function addGuest(){
     new_guest_phonetic_input.placeholder = "サンナナタロウ";
     new_guest_phonetic.appendChild(new_guest_phonetic_input);
     new_guest.appendChild(new_guest_phonetic);
-
+    /*
     var new_guest_isMagician = document.createElement("li");
     var new_guest_isMagician_radio_1 = document.createElement("input");
     new_guest_isMagician_radio_1.type = "radio";
@@ -103,7 +103,11 @@ function addGuest(){
     new_guest_isMagician.appendChild(new_guest_isMagician_radio_2);
     new_guest_isMagician.appendChild(new_guest_first_name_text_2);
     new_guest.appendChild(new_guest_isMagician);
-
+    */
+    var new_guest_isMagician = document.createElement("li");
+    var new_guest_isMagician_text = "ステージマジックの経験がありますか。<br><input type=\"radio\" name=\"isMagician\" value=\"1\">ある<input type=\"radio\" name=\"isMagician\" value=\"0\">ない";
+    new_guest.appendChild(new_guest_isMagician);
+    
     var new_guest_area = document.getElementById("add_guest");
     var next_guest_area = new_guest_area.cloneNode();
 
