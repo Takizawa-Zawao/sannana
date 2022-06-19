@@ -31,11 +31,11 @@ function touchFunction() {
 
 function startFunction(){
     event.dataTransfer.setData("text/plain", event.target.id);
+    alert("start: " + event.target.id);
 }
 
 function mediumFunction(){
-    event.preventDefault();
-    this.style.borderTop = "3px solid";
+    
 }
 
 function endFunction(){
@@ -44,6 +44,7 @@ function endFunction(){
     var element_dropped = document.getElementById(id);
     this.parentNode.insertBefore(element_dropped, this);
     this.style.borderTop = "";
+    alert("end: " + id);
 }
 
 if("ontouchend" in document){
