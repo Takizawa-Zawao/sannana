@@ -52,5 +52,5 @@ if("ontouchend" in document){
     touchFunction();
 }else{
     alert("mouse mode");
-    mouseFuction;
+    mouseFuction();
 }
