@@ -47,7 +47,9 @@ function endFunction(){
 }
 
 if("ontouchend" in document){
+    alert("touch mode");
     touchFunction;
 }else{
+    alert("mouse mode");
     mouseFuction;
 }
