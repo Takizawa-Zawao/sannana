@@ -35,7 +35,8 @@ function startFunction(){
 }
 
 function mediumFunction(){
-    
+    event.preventDefault();
+    this.style.borderTop = "3px solid";
 }
 
 function endFunction(){
