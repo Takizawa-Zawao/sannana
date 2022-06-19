@@ -20,7 +20,7 @@ function mouseFuction() {
     );
 };
 function touchFunction() {
-    document.querySelectorAll("div.draggable_element").forEach(
+    document.querySelectorAll("draggable_element").forEach(
         element => {
             alert(element.textContent);
             element.addEventListener("touchstart", startFunction); 
