@@ -84,7 +84,7 @@ function addGuest(){
     new_guest.appendChild(new_guest_phonetic);
     
     var new_guest_isMagician = document.createElement("li");
-    var new_guest_isMagician_text = "<p>ステージマジックの経験はありますか。</p><input type=\"radio\" name=\"isMagician_" + next_guest_count + "\" value=\"1\" checked>ある<input type=\"radio\" name=\"isMagician\" value=\"0\">ない";
+    var new_guest_isMagician_text = "<p>ステージマジックの経験はありますか。</p><input type=\"radio\" name=\"isMagician_" + next_guest_count + "\" value=\"1\" checked>ある<input type=\"radio\" name=\"isMagician_" + next_guest_count + "\" value=\"0\">ない";
     new_guest_isMagician.innerHTML = new_guest_isMagician_text;
     new_guest.appendChild(new_guest_isMagician);
     
